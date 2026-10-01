@@ -3,10 +3,10 @@ import Footer from '@/components/Footer';
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-background">
       <Header />
-      <article className="pt-32 pb-20 px-4 max-w-4xl mx-auto text-gray-600 prose prose-lg">
-        <h1 className="text-4xl font-black text-gray-900 border-l-8 border-red-600 pl-6 uppercase mb-12">Terms of <span className="text-red-600">Service</span></h1>
+      <article className="pt-32 pb-20 px-4 max-w-4xl mx-auto text-foreground/80 prose prose-lg">
+        <h1 className="text-4xl font-black text-foreground border-l-8 border-red-600 pl-6 uppercase mb-12">Terms of <span className="text-red-600">Service</span></h1>
         <p>By using News The Truth (NTT), a brand owned and operated by Alethia Media and Communication Private Limited, you agree to comply with our standards of conduct and respect for community guidelines.</p>
         <h2>Content Usage</h2>
         <p>All content on NTT is protected by copyright (owned by Alethia Media and Communication Private Limited) and may not be reproduced without explicit permission.</p>

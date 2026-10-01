@@ -41,7 +41,7 @@ export default function ContactPage() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="space-y-12">
-            <div className="prose prose-lg text-gray-600">
+            <div className="prose prose-lg text-foreground/80">
               <p className="text-xl font-bold text-foreground leading-relaxed">
                 Whether you have a news tip, a correction, or simply want to share your thoughts, we're listening.
               </p>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
                 <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-1">General Inquiries</h3>
+                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary mb-1">General Inquiries</h3>
                   <p className="text-xl font-black text-foreground">feedback.ntt@gmail.com</p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
                 <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-1">Our Newsroom</h3>
+                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary mb-1">Our Newsroom</h3>
                   <p className="text-xl font-black text-foreground">Kolkata, West Bengal, India</p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
 
             <div className="p-8 bg-gray-950 rounded-[32px] text-white">
               <h4 className="text-sm font-black uppercase tracking-widest text-primary mb-4">Secure Whistleblowing</h4>
-              <p className="text-sm text-gray-400 leading-relaxed mb-6">
+              <p className="text-sm text-secondary leading-relaxed mb-6">
                 For highly sensitive information, we recommend using ProtonMail or Signal. 
                 Our secure reporting portal is also available 24/7.
               </p>
@@ -104,7 +104,7 @@ export default function ContactPage() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 pl-4">Full Name</label>
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary pl-4">Full Name</label>
                   <input
                     type="text"
                     required
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 pl-4">Email Address</label>
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary pl-4">Email Address</label>
                   <input
                     type="email"
                     required
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 pl-4">Your Message</label>
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary pl-4">Your Message</label>
                   <textarea
                     rows={4}
                     required

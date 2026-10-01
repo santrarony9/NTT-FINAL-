@@ -20,7 +20,6 @@ export default async function Home() {
   let tags: any[] = [];
   let allVideos: any[] = [];
   let indiaPosts: any[] = [];
-  let exclusivePosts: any[] = [];
   let untoldPosts: any[] = [];
   let yourTruthPosts: any[] = [];
   let politicsPosts: any[] = [];
@@ -35,7 +34,6 @@ export default async function Home() {
       fetchTags().catch(() => []),
       fetchYoutubeRSSVideos().catch(() => []),
       fetchCategoryPosts('india', 8).catch(() => []),
-      fetchCategoryPosts('the-exclusive-truth', 1).catch(() => []),
       fetchCategoryPosts('the-untold-truth', 1).catch(() => []),
       fetchCategoryPosts('your-truth', 4).catch(() => []),
       fetchCategoryPosts('politics', 4).catch(() => []),
@@ -48,11 +46,10 @@ export default async function Home() {
     tags = results[3] || [];
     allVideos = results[4] || [];
     indiaPosts = results[5] || [];
-    exclusivePosts = results[6] || [];
-    untoldPosts = results[7] || [];
-    yourTruthPosts = results[8] || [];
-    politicsPosts = results[9] || [];
-    statePosts = results[10] || [];
+    untoldPosts = results[6] || [];
+    yourTruthPosts = results[7] || [];
+    politicsPosts = results[8] || [];
+    statePosts = results[9] || [];
 
     // All fetches now parallelized
   } catch (err) {
@@ -214,19 +211,6 @@ export default async function Home() {
           <section className="px-4 md:px-8 max-w-7xl mx-auto w-full my-8">
              <AdBanner />
           </section>
-
-          {/* Featured: The Exclusive Truth */}
-          {Array.isArray(exclusivePosts) && exclusivePosts.length > 0 && exclusivePosts[0] && (
-            <section className="px-4 md:px-8 max-w-7xl mx-auto w-full">
-               <div className="section-header">
-                <div className="title-group">
-                  <span className="subtitle">NTT Originals</span>
-                  <h2 className="title">THE <span>Exclusive</span> Truth</h2>
-                </div>
-              </div>
-              <NewsCard post={exclusivePosts[0]} variant="hero" />
-            </section>
-          )}
 
           {/* Section: YouTube Showcase */}
           {Array.isArray(videos) && videos.length > 0 && <VideoGallery videos={videos} />}

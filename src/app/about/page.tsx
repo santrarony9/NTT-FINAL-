@@ -9,7 +9,7 @@ export default function AboutPage() {
         <h1 className="text-5xl md:text-7xl font-black text-foreground mb-12 border-l-[12px] border-primary pl-8 uppercase tracking-tighter">
           The Voice of <span className="text-primary">The People</span>
         </h1>
-        <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed font-medium space-y-8">
+        <div className="prose prose-xl max-w-none text-foreground/80 leading-relaxed font-medium space-y-8">
           <p className="text-2xl text-foreground font-bold leading-tight">
             News The Truth (NTT), proudly operated by Alethia Media and Communication Private Limited, is more than just a news portal. It is a movement dedicated to the pursuit of authentic storytelling and the protection of democratic values.
           </p>
